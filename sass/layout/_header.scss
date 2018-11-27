@@ -4,11 +4,12 @@
         to right bottom,
         rgba($color-primary-light, 0.8),
         rgba($color-primary-dark, 0.8)),
-    url(../img/hero-small.jpg);
+    url(../img/nat-ven-1.jpg);
+    // url(../img/hero-small.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
 
   &__logo-box {
     position: absolute;
