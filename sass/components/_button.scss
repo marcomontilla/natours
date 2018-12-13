@@ -1,4 +1,5 @@
 .btn {
+  &,
   &:link,
   &:visited {
     position: relative;
@@ -9,12 +10,19 @@
     border-radius: 10rem;
     transition: all .2s;
     font-size: $default-font-size;
+
+    // Change fot the <button> Element
+    border: none;
+    cursor: pointer;
   }
   &:hover {
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
   }
-  &:active {
+  
+  &:active,
+  &:focus {
+    outline: none;
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
   }
@@ -69,7 +77,7 @@
     display: inline-block;
     text-decoration: none;
     border-bottom: 1px solid $color-primary;
-    padding: 3px; // <-  less than 10px won't change if its value is modified
+    padding: $border-rad; // <-  less than 10px won't change if its value is modified
     transition: all .5s;
   }
 
