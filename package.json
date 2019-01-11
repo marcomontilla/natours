@@ -9,6 +9,6 @@
   "author": "Marco Montilla",
   "license": "MIT",
   "devDependencies": {
-    "node-sass": "^4.10.0"
+    "node-sass": "^4.11.0"
   }
 }

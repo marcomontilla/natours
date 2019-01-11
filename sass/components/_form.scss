@@ -77,18 +77,15 @@
 		left: 0;
 
 		&::after {
-			transform: translate(-50%, -50%);
 			background-color: $color-primary;
 			transition: opacity .2s;
 			border-radius: 50%;
- 			position: absolute;
 			display: block;
 			height: 1.3rem;
 			width: 1.3rem;
 			content: "";
 			opacity: 0;
-			left: 50%;
-			top: 50%;
+			@include hero;
 		}
 
 	}
