@@ -21,7 +21,6 @@
             right: 4rem;
         }
 
-
         @include respond(phone) {
             top: 3rem;
             right: 3rem;
@@ -106,6 +105,10 @@
     // FUNCTIONALITY
     &__checkbox:checked ~ &__background {
         transform: scale(80);
+        
+        @include respond(tab-port) {
+            transform: scale(65);
+        }
     }
 
     &__checkbox:checked ~ &__nav {
