@@ -249,7 +249,8 @@ body { font-family: "Lato", sans-serif; font-weight: 400; /*font-size: 16px;*/ l
 
 .popup__right { width: 66.666667%; display: table-cell; vertical-align: middle; padding: 3rem 5rem; overflow: auto; }
 
-@media (max-width: 75em) { .popup__right { display: block; width: 100%; max-height: 75vh; padding: 2rem 3.5rem; } }
+@media (max-width: 75em) { .popup__right { display: block; width: 100%; max-height: 75vh; padding: 2rem 3.5rem; }
+  .popup__right .heading-secondary, .popup__right .heading-tertiary { text-align: center; } }
 
 @media (max-width: 37.5em) { .popup__right { padding: 2rem 2.8rem 5rem 2.8rem; } }
 
