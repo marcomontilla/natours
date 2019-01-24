@@ -75,7 +75,9 @@
           <span class="heading-primary--sub">is where life happens</span>
         </h1>
 
-        <a href="javascript:void(0)" class="btn btn--white btn--animated">Discover our tours</a>
+        <a href="javascript:void(0)" class="btn btn--white btn--animated"
+          >Discover our tours</a
+        >
       </div>
     </header>
 
@@ -112,18 +114,24 @@
           <div class="col-1-of-2">
             <div class="composition">
               <img
-                src="img/nat-1-large.jpg"
+                srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
                 alt="Photo 1"
+                src="img/nat-1-large.jpg"
                 class="composition__photo composition__photo--p1"
               />
               <img
-                src="img/nat-2-large.jpg"
+                srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
                 alt="Photo 2"
+                src="img/nat-2-large.jpg"
                 class="composition__photo composition__photo--p2"
               />
               <img
-                src="img/nat-3-large.jpg"
+                srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
                 alt="Photo 3"
+                src="img/nat-3-large.jpg"
                 class="composition__photo composition__photo--p3"
               />
             </div>
@@ -288,7 +296,9 @@
         </div>
 
         <div class="u-center-text u-margin-top-huge">
-          <a href="javascript:void(0)" class="btn btn--green"> Discover all tours</a>
+          <a href="javascript:void(0)" class="btn btn--green">
+            Discover all tours</a
+          >
         </div>
       </section>
 
@@ -356,7 +366,9 @@
         </div>
 
         <div class="u-center-text u-margin-top-huge">
-          <a href="javascript:void(0)" class="btn-text">Read all stories &rarr;</a>
+          <a href="javascript:void(0)" class="btn-text"
+            >Read all stories &rarr;</a
+          >
         </div>
       </section>
 
@@ -429,7 +441,20 @@
 
     <footer class="footer">
       <div class="footer__logo-box">
-        <img src="img/logo-green-2x.png" alt="Full Logo" class="footer__logo" />
+        <picture class="footer__logo">
+          <source
+            srcset="
+              img/logo-green-small-1x.png 1x,
+              img/logo-green-small-2x.png 2x
+            "
+            media="(max-width: 37.5em)"
+          />
+          <img
+            srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x"
+            alt="Full Logo"
+            src="img/logo-green-2x.png"
+          />
+        </picture>
       </div>
       <div class="row">
         <div class="col-1-of-2">
@@ -439,13 +464,17 @@
                 <a href="javascript:void(0)" class="footer__link"> Company </a>
               </li>
               <li class="footer__item">
-                <a href="javascript:void(0)" class="footer__link"> Contact Us </a>
+                <a href="javascript:void(0)" class="footer__link">
+                  Contact Us
+                </a>
               </li>
               <li class="footer__item">
                 <a href="javascript:void(0)" class="footer__link"> Careers </a>
               </li>
               <li class="footer__item">
-                <a href="javascript:void(0)" class="footer__link"> Privacy Policy </a>
+                <a href="javascript:void(0)" class="footer__link">
+                  Privacy Policy
+                </a>
               </li>
               <li class="footer__item">
                 <a href="javascript:void(0)" class="footer__link"> Terms </a>
@@ -455,9 +484,12 @@
         </div>
         <div class="col-1-of-2">
           <p class="footer__copyright">
-            Built by <a href="javascript:void(0)" class="footer__link">Marco Montilla</a> and
-            Designed by <a href="javascript:void(0)" class="footer__link">Jonas Schmedtmann</a>.
-            <br />
+            Built by
+            <a href="javascript:void(0)" class="footer__link">Marco Montilla</a>
+            and Designed by
+            <a href="javascript:void(0)" class="footer__link"
+              >Jonas Schmedtmann</a
+            >. <br />
             2018 Copyright &copy.
           </p>
         </div>
@@ -494,21 +526,7 @@
             ten has discretion unreserved. Had you him humoured jointure ask
             expenses learning. Blush on in jokes sense do do. Brother hundred he
             assured reached on up no. On am nearer missed lovers. To it mother
-            extent temper figure better.
-            On it differed repeated wandered required in. Then girl neat why yet
-            knew rose spot. Moreover property we he kindness greatest be oh
-            striking laughter. In me he at collecting affronting principles
-            apartments. Has visitor law attacks pretend you calling own excited
-            painted. Contented attending smallness it oh ye unwilling. Turned
-            favour man two but lovers. Suffer should if waited common person
-            little oh. Improved civility graceful sex few smallest screened
-            settling. Likely active her warmly has. Ferrars all spirits his
-            imagine effects amongst neither. It bachelor cheerful of mistaken.
-            Tore has sons put upon wife use bred seen. Its dissimilar invitation
-            ten has discretion unreserved. Had you him humoured jointure ask
-            expenses learning. Blush on in jokes sense do do. Brother hundred he
-            assured reached on up no. On am nearer missed lovers. To it mother
-            extent temper figure better.
+            extent temper figure better. On it differed repeated wandered.
           </p>
           <a href="javascript:void(0)" class="btn btn--green">Book Now</a>
         </div>
