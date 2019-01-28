@@ -76,6 +76,16 @@ body {
       -webkit-transform: skewY(0) skewX(0);
               transform: skewY(0) skewX(0);
     }
+
+    @include respond(phone) {
+      -webkit-transform: skewY(0) skewX(0);
+              transform: skewY(0) skewX(0);
+              
+      &:focus{
+        -webkit-transform: skewY(0) skewX(0);
+                transform: skewY(0) skewX(0);
+      }
+    }
   }
 }
 
