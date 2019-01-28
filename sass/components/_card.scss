@@ -1,12 +1,14 @@
 // Funcion de la tarjeta [Giro y transicion]
 .card {
-  perspective: 150rem;
+  -webkit-perspective: 150rem;
+          perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
   height: 52rem;
 
   &__side {
     height: 52rem;
+    -webkit-transition: all .8s ease;
     transition: all .8s ease;
     position: absolute;
     top: 0;
@@ -16,7 +18,8 @@
     backface-visibility: hidden;
     border-radius: $border-rad;
     overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    -webkit-box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+            box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
     &--front {
       background-color: $color-white;
@@ -28,18 +31,22 @@
     &--back {
       // transform: rotateX(180deg) rotateY(90deg); // Effect 1
       // transform: rotateX(180deg) rotateY(-90deg); // Effect 1 INVERTED
-      transform: rotateX(180deg); // Effect 2 Vertical
+      -webkit-transform: rotateX(180deg);
+              transform: rotateX(180deg); // Effect 2 Vertical
       // transform: rotateY(180deg); // Effect 2 Horizontal
 
       &-1 {
+        background-image: -webkit-gradient(linear, left top, right bottom, from($color-secondary-light), to($color-secondary-dark));
         background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
       }
 
       &-2 {
+        background-image: -webkit-gradient(linear, left top, right bottom, from($color-primary-light), to($color-primary-dark));
         background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
       }
 
       &-3 {
+        background-image: -webkit-gradient(linear, left top, right bottom, from($color-tertiary-light), to($color-tertiary-dark));
         background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
       }
     }
@@ -48,14 +55,16 @@
   &:hover &__side--front {
     // transform: rotateX(-180deg) rotateY(-90deg); // Effect 1
     // transform: rotateX(-180deg) rotateY(90deg); // Effect 1 INVERTED
-    transform: rotateX(-180deg); // Effect 2 Vertical
+    -webkit-transform: rotateX(-180deg);
+            transform: rotateX(-180deg); // Effect 2 Vertical
     // transform: rotateY(-180deg); // Effect 2 Horizontal
  
   }
 
   &:hover &__side--back {
     // transform: rotateX(0deg) rotateY(0deg); // Effect 1
-    transform: rotateX(0deg); // Effect 2 Vertical
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg); // Effect 2 Vertical
     // transform: rotateY(0deg); // Effect 2 Horizontal
  
   }
@@ -71,14 +80,17 @@
     border-top-right-radius: $border-rad;
 
     &--1 {
+      background-image: -webkit-gradient(linear, left top, right bottom, from($color-secondary-light), to($color-secondary-dark)), url(../img/nat-5.jpg);
       background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/nat-5.jpg);
     }
 
     &--2 {
+      background-image: -webkit-gradient(linear, left top, right bottom, from($color-primary-light), to($color-primary-dark)), url(../img/nat-7.jpg);
       background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../img/nat-7.jpg);
     }
 
     &--3 {
+      background-image: -webkit-gradient(linear, left top, right bottom, from($color-tertiary-light), to($color-tertiary-dark)), url(../img/nat-6.jpg);
       background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/nat-6.jpg);
     }
   }
@@ -101,14 +113,17 @@
     box-decoration-break: clone;
 
     &--1 {
+      background-image: -webkit-gradient(linear, left top, right bottom, from(rgba($color-secondary-light, 0.85)), to(rgba($color-secondary-dark, 0.85)));
       background-image: linear-gradient(to right bottom, rgba($color-secondary-light, 0.85), rgba($color-secondary-dark, 0.85));
     }
 
     &--2 {
+      background-image: -webkit-gradient(linear, left top, right bottom, from(rgba($color-primary-light, 0.85)), to(rgba($color-primary-dark, 0.85)));
       background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.85), rgba($color-primary-dark, 0.85));
     }
 
     &--3 {
+      background-image: -webkit-gradient(linear, left top, right bottom, from(rgba($color-tertiary-light, 0.85)), to(rgba($color-tertiary-dark, 0.85)));
       background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, 0.85), rgba($color-tertiary-dark, 0.85));
     }
   }
@@ -161,25 +176,31 @@
     height: auto;
     border-radius: $border-rad;
     background-color: $color-white;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    -webkit-box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+            box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
     &__side {
       height: auto;
       position: relative;
-      box-shadow: none;
+      -webkit-box-shadow: none;
+              box-shadow: none;
 
       &--back {
-        transform: rotateX(0);
-        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+        -webkit-transform: rotateX(0);
+                transform: rotateX(0);
+        -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+                clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
       }
     }
 
     &:hover &__side--front {
-      transform: rotateX(0);
+      -webkit-transform: rotateX(0);
+              transform: rotateX(0);
     }
 
     &:hover &__side--back {
-      transform: rotateX(0deg);
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
     }
 
     &__details {
@@ -191,7 +212,8 @@
       position: relative;
       top: 0%;
       left: 0;
-      transform: translate(0);
+      -webkit-transform: translate(0);
+              transform: translate(0);
       width: 100%;
       padding: 7rem 4rem 4rem 4rem;
     }

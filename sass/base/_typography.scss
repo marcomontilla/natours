@@ -8,7 +8,8 @@ body {
 .heading-primary {
   color: $color-white;
   text-transform: uppercase;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   margin-bottom: 6rem;
 
   &--main {
@@ -16,9 +17,12 @@ body {
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 3.5rem;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
+    -webkit-animation-name: moveInLeft;
+            animation-name: moveInLeft;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
 
     @include respond(phone) {
       letter-spacing: 1rem;
@@ -31,7 +35,8 @@ body {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.75rem;
-    animation: moveInRight 1s ease-out;
+    -webkit-animation: moveInRight 1s ease-out;
+            animation: moveInRight 1s ease-out;
 
     @include respond(phone) {
       letter-spacing: .5rem;
@@ -44,16 +49,17 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
+  background-image: -webkit-gradient(linear, left top, right top, from($color-primary-light), to($color-primary-dark));
   background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: .2rem;
+  -webkit-transition: all .2s;
   transition: all .2s;
 
   @include respond(tab-port) {
     font-size: 3rem;
   }
-
 
   @include respond(phone) {
     font-size: 2.5rem;
@@ -62,8 +68,14 @@ body {
 
 
   &:hover {
-    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    -webkit-transform: skewY(2deg) skewX(15deg) scale(1.1);
+            transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+
+    @include respond(tab-port) {
+      -webkit-transform: skewY(0) skewX(0);
+              transform: skewY(0) skewX(0);
+    }
   }
 }
 

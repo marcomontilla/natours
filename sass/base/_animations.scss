@@ -1,16 +1,52 @@
 //Animations
+@-webkit-keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-10rem);
+    transform: translateX(-10rem);
+  }
+  80% {
+    -webkit-transform: translateX(1rem);
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
+    -webkit-transform: translateX(-10rem);
     transform: translateX(-10rem);
   }
-
   80% {
+    -webkit-transform: translateX(1rem);
     transform: translateX(1rem);
   }
-
   100% {
     opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes moveInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(10rem);
+    transform: translateX(10rem);
+  }
+  80% {
+    opacity: 0.8;
+    -webkit-transform: translateX(-1rem);
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
@@ -18,28 +54,56 @@
 @keyframes moveInRight {
   0% {
     opacity: 0;
+    -webkit-transform: translateX(10rem);
     transform: translateX(10rem);
   }
-
   80% {
     opacity: 0.8;
+    -webkit-transform: translateX(-1rem);
     transform: translateX(-1rem);
   }
-
   100% {
     opacity: 1;
+    -webkit-transform: translateX(0);
     transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10rem);
+    transform: translateY(10rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
 @keyframes moveInBottom {
   0% {
     opacity: 0;
+    -webkit-transform: translateY(10rem);
     transform: translateY(10rem);
   }
-
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes moveInTop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10rem);
+    transform: translateY(-10rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
@@ -47,11 +111,12 @@
 @keyframes moveInTop {
   0% {
     opacity: 0;
+    -webkit-transform: translateY(-10rem);
     transform: translateY(-10rem);
   }
-
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }

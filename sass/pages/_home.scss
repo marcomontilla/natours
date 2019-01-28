@@ -10,13 +10,21 @@
 
 .section-features {
   padding: 20rem 3rem;
-  background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url(../img/nat-4.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba($color-primary-light, 0.8)), to(rgba($color-primary-dark, 0.8))), url(../img/nat-4-small.jpg);
+  background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url(../img/nat-4-small.jpg);
   background-size: cover;
   margin-top: -10vh;
-  transform: skewY(-6deg);
+  -webkit-transform: skewY(-6deg);
+          transform: skewY(-6deg);
+
+  @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em){
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba($color-primary-light, 0.8)), to(rgba($color-primary-dark, 0.8))), url(../img/nat-4.jpg);
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url(../img/nat-4.jpg);
+  }
 
   & > * {
-    transform: skewY(6deg);
+    -webkit-transform: skewY(6deg);
+            transform: skewY(6deg);
   }
 
   @include respond(tab-port) {
@@ -50,6 +58,7 @@
 
 .section-book {
   padding: 15rem 0;
+  background-image: -webkit-gradient(linear, left top, right bottom, from($color-primary-light), to($color-primary-dark));
   background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
 
   @include respond(tab-port) {
@@ -58,17 +67,23 @@
 }
 
 .book {
-  background-image: linear-gradient(105deg, rgba($color-white, 0.9) 0%, rgba($color-white, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
+  background-image: linear-gradient(105deg, rgba($color-white, 0.9) 0%, rgba($color-white, 0.9) 50%, transparent 50%), url(../img/nat-10-small.jpg);
   background-size: cover;
   border-radius: $border-rad;
-  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  -webkit-box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+          box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+  @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em){
+    background-image: linear-gradient(105deg, rgba($color-white, 0.9) 0%, rgba($color-white, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
+  }
 
   @include respond(tab-land) {
-    background-image: linear-gradient(105deg, rgba($color-white, 0.9) 0%, rgba($color-white, 0.9) 65%, transparent 65%), url(../img/nat-10.jpg);
+    background-image: linear-gradient(105deg, rgba($color-white, 0.9) 0%, rgba($color-white, 0.9) 65%, transparent 65%), url(../img/nat-10-small.jpg);
   }
 
 
   @include respond(tab-port) {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba($color-white, 0.9)), to(rgba($color-white, 0.9))), url(../img/nat-10.jpg);
     background-image: linear-gradient(to right, rgba($color-white, 0.9) 0%, rgba($color-white, 0.9) 100%), url(../img/nat-10.jpg);
   }
 

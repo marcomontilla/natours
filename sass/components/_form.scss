@@ -14,6 +14,7 @@
     border-bottom: 3px solid transparent;
     width: 90%;
     display: block;
+    -webkit-transition: all .3s;
     transition: all .3s;
 
     @include respond(tab-port) {
@@ -23,7 +24,8 @@
 
     &:focus {
       outline: none;
-      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+      -webkit-box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+              box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
       border-bottom: 3px solid $color-primary;
     }
 
@@ -42,14 +44,17 @@
     margin-top: .7rem;
     margin-left: 2rem;
     display: block;
+    -webkit-transition: all .3s;
     transition: all .3s;
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
   }
 
   &__input:placeholder-shown + &__label {
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-4rem);
+    -webkit-transform: translateY(-4rem);
+            transform: translateY(-4rem);
   }
 
   &__radio-group {
@@ -85,6 +90,7 @@
 
     &::after {
       background-color: $color-primary;
+      -webkit-transition: opacity .2s;
       transition: opacity .2s;
       border-radius: 50%;
       display: block;
