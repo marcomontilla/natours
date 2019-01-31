@@ -20,6 +20,8 @@
   &__content {
     @include hero;
 
+    z-index: 3500;
+ 
     width: 75%;
     background-color: $color-white;
     -webkit-box-shadow: 0 2rem 4rem rgba($color-black, 0.2);

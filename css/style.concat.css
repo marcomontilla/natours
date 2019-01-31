@@ -913,7 +913,7 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     .card {
       height: auto;
       border-radius: 3px;
@@ -1154,6 +1154,7 @@ body {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    z-index: 3500;
     width: 75%;
     background-color: #fff;
     -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
@@ -1461,7 +1462,7 @@ body {
       height: 95vh;
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); } }
-  @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+  @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
       background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.8)), to(rgba(40, 180, 133, 0.8))), url(../img/nat-ven-1.jpg);
       background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-ven-1.jpg); } }
@@ -1583,10 +1584,6 @@ body {
 .navigation__checkbox:checked ~ .navigation__background {
   -webkit-transform: scale(80);
   transform: scale(80); }
-  @media only screen and (max-width: 56.25em) {
-    .navigation__checkbox:checked ~ .navigation__background {
-      -webkit-transform: scale(65);
-      transform: scale(65); } }
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;

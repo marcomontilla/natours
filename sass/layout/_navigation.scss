@@ -48,7 +48,6 @@
       right: 4.5rem;
     }
 
-
     @include respond(phone) {
       top: 3.5rem;
       right: 3.5rem;
@@ -114,11 +113,6 @@
   &__checkbox:checked ~ &__background {
     -webkit-transform: scale(80);
             transform: scale(80);
-
-    @include respond(tab-port) {
-      -webkit-transform: scale(65);
-              transform: scale(65);
-    }
   }
 
   &__checkbox:checked ~ &__nav {
