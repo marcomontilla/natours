@@ -1,7 +1,7 @@
 [![github.com/marcomontilla](https://avatars2.githubusercontent.com/u/25273655?v=4&s=120)](https://github.com/marcomontilla/)
 
 # Natours
-This repo contains the source code for the front-end for **Natours**, to see the live demo go [here - Natours](https://marcomontilla.github.edu/natours/)
+This repo contains the source code for the front-end for **Natours**, to see the live demo go [here - Natours](https://marcomontilla.github.io/natours/)
 
 
 ### Getting Started
